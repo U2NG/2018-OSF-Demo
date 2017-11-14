@@ -1,2 +1,2 @@
-# 2017-OSF-SLOAN
-UC San Diego OSF for Institutions demo
+# 2017-sio-osfdemo
+OSF Demo for RRROBOTS course
