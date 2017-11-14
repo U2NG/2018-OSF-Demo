@@ -5,7 +5,7 @@ Jolene Esposito OSF-Curriculum
 
 csoderberg OSF-Curriculum
 
-# Lesson 2: Setting up a collaborative space
+# Lesson 2: Setting up a project space
 
 Learning objectives:
 
