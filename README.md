@@ -1,2 +1,2 @@
-# 2017-sio-osfdemo
-OSF Demo for RRROBOTS course
+# 2017-sloan-scholars-osfdemo
+OSF Demo for Sloan Scholars Workshop
