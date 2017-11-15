@@ -1,4 +1,4 @@
-# OSF Demo for GPS 2017
+# OSF Demo for Sloan Scholars 2017
 
 ##### Lesson adapted from:
 Jolene Esposito OSF-Curriculum
@@ -19,7 +19,9 @@ Learning objectives:
 ## Materials Overview
 
 ## ***Activity***
-**download materials from [OSF Github repo]**
+* **download materials from [public OSF project]**
+
+* Search OSF projects for **"2017 Sloan Scholars Workshop Template"**
 
 ## Creating a project
 * We talked before about the problems that can arise when we either don’t document work, or we try and go and back document work once a study is accepted for publication. This becomes even more challenging when you have multiple collaborators, especially if they are at different institutions, and you have been sending materials back and forth by email.
@@ -35,9 +37,7 @@ Learning objectives:
 * A **project** on the site can be anything: a lab group, an organization, a grant, a line of research, an individual experiment, etc.
 
 ## ***Activity***
-Since we don’t have any projects yet, and we’re only going to be working on one research project, lets just **create a project for that one study.**
-
-* Select a person in your group to create a project.
+Since we don’t have any projects yet, and we’re only going to be working on one research project, lets just **create a blank project.**
 
 * click on the **create project** button, and give the project whatever name you like.
 
@@ -74,7 +74,7 @@ That’s because all projects on the OSF are set to **private** as a default.
 * This means that only people who have been added as **contributors** to the project have access to it and can see and/or edit it.
 
 
-## ***Activity***
+## ***Activity - Contributor permissions***
 Since we want this to be a **collaborative project**, we need to **give the other two members of your teams access to the project.**
 
 * go up to the **contributors tab** and click on that, this is how you can add people as contributors.
@@ -88,7 +88,7 @@ There are three possible settings:
 
   * **read** - contributor can see into the project and can download any files they want, but they will not be able to add any files or modify any content.
 
-## ***Activity***
+## ***Activity - Adding a Contributor***
 **add contributors/collaborators to your project.**
 
 * You can decide what level of access you want to give them, but keep in mind that later on both are going to need the ability to upload files.
@@ -118,13 +118,11 @@ In the OSF, a good place to put this type of information is in the **wiki**.
 You get into the **wiki** by **clicking on the widget**, and then click on the **edit** button in the upper right to open up the editor.
 
 ## ***Activity***
-**Create wiki with a Research Question and hypothesis.**
+**Create wiki giving a brief description of the project.**
 
 * Take a minute to set up a wiki for the project.
 
-* Discuss amongst your group what you are interested in looking at in the dataset I given to you.
-
-* Then collaboratively enter your research question and hypotheses, if you have them, into the wiki.
+* Enter some hypothetical text, into the wiki section.
 
 # Adding organizational structure
 Right now our project is pretty flat. It is basically just one big folder with a wiki with some basic content in it.
@@ -201,14 +199,15 @@ we’re going to take advantage of the OSFs add-on capabilities.
 
 * If you go to the **settings** page of your project you can see the different add-ons that are available.
 
-***Activity***
-**Using one of the storage add-ons.**
+## **Activity**
 
-I’m going to show it with Google Drive, but if you don’t have a Drive account you can use Box or anything on the list.
+* **Using one of the storage add-ons.**
+
+I’m going to show the Google Drive add-on, but if you don’t have a Drive account you can use Box or anything on the list.
 
 * find the files we shared for this lesson.
 
-* Log into into your chosen storage account and create a folder called **demo project** and then upload the files to that folder.
+* Log into into your chosen storage account and create a folder called **2017 demo project** and then upload the files to that folder.
 
 * Now, go to your **OSF project and create a new component** for the files just uploaded.
 

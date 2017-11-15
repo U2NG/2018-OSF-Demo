@@ -1,4 +1,4 @@
-# OSF Demo for GPS 2017
+# OSF Demo for Sloan Scholars 2017
 
 ##### Lesson adapted from:
 Jolene Esposito OSF-Curriculum
@@ -86,7 +86,7 @@ You always want to **keep a copy of our complete, raw data file.** Even if we en
 ## ***Activity***
 **Upload raw data file and data dictionary.**
 
-* Name the data file accordingly and upload it to the appropriate section of you project.
+* Name the data file accordingly and upload it to the appropriate folder based on your TIER protocol structure.
 
 * We also want to upload the data dictionary so we’ll always know what our variable names actually mean.
 

@@ -1,4 +1,4 @@
-# OSF Demo for GPS 2017
+# OSF Demo for Sloan Scholars 2017
 
 ##### Lesson adapted from:
 Jolene Esposito OSF-Curriculum
@@ -41,15 +41,14 @@ Often in science we want the results of studies to be reproducible, so we want o
 
 ### What will happen in this workshop?
 
-* Work with the OSF to increase the documentation and transparency of your workflow, and learning tools that will help you to implement these changes.
+* Work with the OSF to increase the documentation and transparency of your workflow, and learning how to use the environment that will help you apply best data management practices.
 
-* To do this, we’re all going to be working through a hypothetical research study.
+* To do this, we’re all going to be working in the OSF applying the TIER protocol.
 
-* You’ll work on building an open, transparent research project from start to finish in order to learn good data/project management practices and use of the OSF.
+* You’ll work on building an open, transparent research project in order to learn good data/project management practices and practical use of the OSF.
 
 # Getting Started
 
 ### ***Activity***
-* Group participants in 2 or 3 people per group
 
 * Setup a new account or sign in to OSF [here](http://osf.io)

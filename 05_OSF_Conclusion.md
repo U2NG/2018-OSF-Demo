@@ -1,14 +1,10 @@
-# OSF Demo for GPS 2017
+# OSF Demo for Sloan Scholars 2017
 
 ##### Lesson adapted from csoderberg OSF-Curriculum https://github.com/csoderberg/OSF-Curriculum
 
 
 
 # Conclusion
-
-
-
-
 
 
 ## Take-aways
@@ -24,7 +20,7 @@ Figuring out how to apply examples to your particular needs can be challenging. 
 ## Where to get help?
 
 * If you want to review any of the workshop content, it is all available here:
-https://github.com/csoderberg/OSF-Curriculum
+https://
 
 * If you need help with the OSF for Institutions at UC San Diego visit the Library Data & GIS Lab or contact:
 data-consult@ucsd.edu

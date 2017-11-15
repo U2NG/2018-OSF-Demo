@@ -1,4 +1,4 @@
-# OSF Demo for GPS 2017
+# OSF Demo for Sloan Scholars 2017
 
 ##### Lesson adapted from:
 Jolene Esposito OSF-Curriculum
@@ -46,11 +46,10 @@ That might include materials that you used in your project that are perhaps copy
 Make sure you have organized your project in such a way that it will allow you to make public only the parts you want, while keeping some parts private if that is necessary.
 
 
-
 ## ***Discussion***
 **Question: What could I do so that I could share my clean data file but not reveal my raw data file with the geolocation variable in it?**
 
-One thing I could do would be to create another component under Data and move my raw data file to that component.
+One thing I could do would be to create another **component** under Data and move my raw data file to that component.
 
 Any file can be moved by simply clicking and dragging it to whichever part of the project you want to move it to.
 
