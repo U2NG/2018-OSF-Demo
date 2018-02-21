@@ -1,2 +1,2 @@
-# 2017-sloan-scholars-osfdemo
-OSF Demo for Sloan Scholars Workshop
+# GPS OSF workshop materials
+OSF materials for School of Global Policy and Strategy Skills Course
