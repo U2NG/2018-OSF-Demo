@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset="utf-8" />
-      <title>03_OSF_Documenting</title>
+      <title>04_OSF_Sharing</title>
       <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
 .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
 .markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
@@ -529,114 +529,109 @@ pre.editor-colors .fold-marker:after {
   <body class='markdown-preview' data-use-github-style><h1 id="osf-gps-lecture">OSF GPS Lecture</h1>
 <h5 id="lesson-adapted-from-">Lesson adapted from:</h5>
 <p>Jolene Esposito OSF-Curriculum<br>csoderberg OSF-Curriculum</p>
-<h1 id="lesson-3-documenting-as-you-go">Lesson 3: Documenting as you go</h1>
+<h1 id="lesson-4-sharing-your-work">Lesson 4: Sharing Your work</h1>
 <p>Learning objectives:</p>
 <ul>
-<li>Understand how to effectively document <strong>during the process</strong><ul>
-<li>Uploading files</li>
-<li>Version control on the OSF</li>
-</ul>
+<li><p>Understand the motivations for open sharing</p>
+</li>
+<li><p>Understand important considerations before making data public</p>
+</li>
+<li><p>Understand how to make research findable</p>
+</li>
+<li><p>Understand how to get credit for your work</p>
 </li>
 </ul>
+<h2 id="why-share-">Why Share?</h2>
+<p>Now that we’ve created our project, uploaded all our materials, documented our entire process, we’re at the point where we need to decide if we want share our work, and if so what parts of it do we want to share?</p>
+<p>There are many different reasons why you might want to share your work.</p>
 <ul>
-<li>Understanding the importance of certain lifecycle points<ul>
-<li>Creating Registrations</li>
-<li>GUIDs/DOIs</li>
-</ul>
+<li><p>Many funder and some journals now require that data and code be shared upon publication or the conclusion of a grant.</p>
+</li>
+<li><p>Additionally there is evidence to suggest that papers with open data get cited more than papers that do not.</p>
+</li>
+<li><p>Finally, sharing materials and data makes it easier for others to try and reproduce your work, and to build off your work.</p>
 </li>
 </ul>
-<h2 id="registrations-quick-overview-">Registrations (Quick Overview)</h2>
-<p>There are also specific points in a projects life that may be particularly important and that we may want to <code>freeze</code> and always be able to go back to.</p>
+<p>There are both internal and external reasons that may motivate sharing some or all of your research products.</p>
+<h2 id="sharing">Sharing</h2>
+<p>When a project is created, everything on the OSF is <strong>private by default.</strong></p>
+<p>You can make either the entire project, or specific subproject or components of the project public at any point you want by clicking on the <strong>public</strong> button of each project/component you wish to make public.</p>
+<h2 id="-tip-"><strong><em>Tip</em></strong></h2>
+<p>One important thing to consider before making anything <code>public</code> is whether it contains anything that you can’t make public for legal or ethical reasons.</p>
+<p>That might include materials that you used in your project that are perhaps copyrighted, or data-files that are not anonymous and so your IRB has told you that you can only make public the anonymous dataset.</p>
+<p>Make sure you have organized your project in such a way that it will allow you to make public only the parts you want, while keeping some parts private if that is necessary.</p>
+<h2 id="-discussion-"><strong><em>Discussion</em></strong></h2>
+<p><strong>Question: What could I do so that I could share my clean data file but not reveal my raw data file with the geolocation variable in it?</strong></p>
+<p>One thing I could do would be to create another <strong>component</strong> under Data and move my raw data file to that component.</p>
+<p>Any file can be moved by simply clicking and dragging it to whichever part of the project you want to move it to.</p>
+<h2 id="-activity-make-your-project-public-"><strong><em>Activity - Make your project public</em></strong></h2>
+<p>Now that we have uploaded and organized our files, let's make our project public.</p>
+<p><strong>discuss how much of your project you can/want to make public.</strong></p>
+<p><strong>Make those sections of your project public, and if you need to reorganize any parts of your project to accomplish that, please do that now.</strong></p>
+<h2 id="increasing-discoverability">Increasing Discoverability</h2>
+<p>All projects, sub-projects/components, and files on the OSF have <strong>GUIDs.</strong></p>
+<p>To send people to a project I can send them that GUID, or put it in a paper to help people navigate to my materials.</p>
+<p>However, we also want to make sure that our materials can be found by people who don’t already know it exists.</p>
+<p><strong>We want to make sure it is discoverable.</strong></p>
+<h4 id="searching-">Searching:</h4>
+<p>Work posted on the OSF can be discovered in a few different ways.</p>
 <ul>
-<li>For example, what the project looked like just before we started data collection (often called a pre-registration), or what the project looked like when it was accepted for publication are two points that we may want to easily be able to get back to, or easily share with others.</li>
+<li>In the OSF:<ul>
+<li>The first is through the <code>search function</code> within the OSF itself. We can search for anything we want, a project title, a general topic, a person’s name, and the system will bring up anything related to our search.</li>
 </ul>
-<p>One way to keep track of these important points is to <strong>create registrations</strong>.</p>
-<p>A <strong>registration</strong> creates a <code>frozen snapshot</code> of a project, or section of a project, that can never be deleted or changed.</p>
-<p> Basically, it’s a <strong>permanent, read-only copy of that part of the project.</strong></p>
-<h3 id="-lecture-note-"><strong><em>Lecture Note:</em></strong></h3>
-<p> <strong>Only show how you go about registering a project.</strong></p>
-<p> <strong>Do not follow along</strong> with this section, as registrations are <strong>not reversible.</strong></p>
-<h3 id="demo-registrations-quick-review-only-">Demo Registrations (Quick Review only)</h3>
+</li>
+</ul>
+<p>You’ll see it will also make suggestions about ways to potentially refine your search.</p>
 <ul>
-<li><p>First thing is to click on the <strong>registration</strong> tab on the top of the project.</p>
-</li>
-<li><p><strong>Note that this will register the part of the project you’re currently in, and all components and folders nested within this part of the project.</strong></p>
-</li>
-<li><p>There are a few different <strong>registration templates</strong> that you can choose from that will allow you to fill in some information about the registration you are making.</p>
-</li>
-<li><p>If you are unsure, choose the <strong>Open-ended Registration</strong> and this will give you the ability to provide some information about why you are registering the project. This is important, as you can have multiple registrations of a project and this section will allow you to tell them apart.</p>
-</li>
-<li><p>There are <strong>two options</strong> for how you want to release your registrations.</p>
+<li><p>Using Google:   </p>
 <ul>
-<li><p>make them <strong>public immediately</strong>, which means anyone will be able to see them</p>
+<li>Public project on the OSF are also <code>indexed by google</code>, so they can be discovered outside the system. So, for example, if we go to google and search for <code>‘Daniel Lakens effect size’</code> his OSF project related to effect sizes comes up.</li>
+</ul>
 </li>
-<li><p>you can <strong>place an embargo</strong> on the registration.  </p>
+<li><p>Share:    </p>
 <ul>
-<li>If you choose to <code>embargo</code>, the project will be immediately registered, but the registration will not be made public until after the embargo date that you specify. You can embargo registrations for up to four years, but after that they must become public.</li>
+<li>Finally, information that has been registered on the OSF is discoverable through the <strong>SHARE</strong> notification service. If we go to <strong>osf.io/share</strong>, this will allow us to search through the contents of over 50 different providers.</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<h4 id="-note-about-embargoes-"><strong><em>Note about Embargoes</em></strong></h4>
-<p>Why might you want to set an embargo date?</p>
+<p>For SHARE specifically, <code>only public registrations show up in the search results</code>, which is another reason to register projects when you want to release a stable version of them.</p>
 <ul>
-<li><p>If you are doing a preregistration, and your study hasn’t happened yet, you may want to embargo the registration so that participants and/or RAs cannot discover what you’re hypotheses are in order to preserve blinding in your study.</p>
+<li><p>Part of making our work discoverable is making sure the right people find it through searches.</p>
 </li>
-<li><p>Some researchers are also afraid of being ‘scooped’ and so they may not want to release their study protocol before the study is completed. If you are doing a a registration after a study has finished, you may also need the embargo feature because the journal you submitted to may have an embargo period. All these are valid reasons, which is why we give the option of either embargoes or immediate public release for registrations.</p>
+<li><p>We want to make sure we understand how are work is being searched.</p>
+</li>
+<li><p>Currently, the search on the OSF will search through contents in the wiki, project/component names, and tags.</p>
+</li>
+<li><p>But it won’t search through individual files.  </p>
 </li>
 </ul>
-<p>If you choose the <code>embargo feature</code>, an email will be sent to all the administrators on the project, asking if they want to cancel the registration, since you <code>can’t undo registrations or change embargo dates</code> after the fact. <strong>If any of the admins cancels the registration within 48 hours, the registration does not occur.</strong> If they all either approve it, or ignore the email, the registration goes through and the embargo period is set.</p>
-<h3 id="after-registration-is-completed">After registration is completed</h3>
-<p>A few things to notice about the registration.</p>
+<h3 id="-discussion-"><strong><em>Discussion</em></strong></h3>
+<p>If you think there are a few important key words that people might use to search for your project that don’t appear in the wiki or project name, where do you put this information?    </p>
+<p><strong>We can add tags</strong> to our project to make it more discoverable.</p>
 <ul>
-<li>Firstly, the <code>registration GUID</code> is different from the projects, so you can easily use the links to send people to either the project, or the registration, whichever is more appropriate.</li>
+<li>You’ll notice this <strong>tags</strong> area to the right of the screen. I can put whatever descriptors or keywords in here that I want to make it easier to discover my project for searching for related words/topics.</li>
 </ul>
-<p>Just like the actual project and registration have different GUIDs, they also have <code>different privacy settings</code>.</p>
+<h2 id="-activity-"><strong><em>Activity</em></strong></h2>
+<p><strong>Add some tags that you think might be relevant to your project.</strong></p>
+<h2 id="getting-credit">Getting Credit</h2>
+<p>A big part of academia and the job market is being able to show that your work has impact.</p>
+<p>The classic way many fields often talk about this is <strong>citation counts.</strong></p>
+<p>Now, we know this isn’t a great metric, particularly for newer papers, but since there is still a heavy emphasis places on it, we want to make sure that whatever we make open can be cited by other people who used it.</p>
+<p>We talked before about how you can get DOIs for your work through public registrations. E.g. EZID (for UC) and DataCite, OSF GUID.</p>
+<p><strong>Every project and component on the OSF also has an automatically generated citation which uses the GUID of the page, so as long as you have the correct contributor list on your project, everyone can get credit for it.</strong></p>
+<p>Since citation counts have limitations, what else could we use to measure the impact of our work?</p>
+<p>Two things we might be interested in are <strong>views and downloads.</strong> For all public projects we track how many people are visiting a page, and we track how often all files are downloaded.</p>
+<h4 id="-daniel-lakens-example-"><strong><em>Daniel Lakens Example:</em></strong></h4>
+<p>Now, your projects aren’t particularly old, so they probably won’t have very many views. But, if we search for <strong>Daniel Lakens</strong> and click on this project, we can see how views and downloads can give vastly different information than citation counts.</p>
 <ul>
-<li>Even though the registration is public, the actual project is still private, and I can make changes to that project which non-contributors will not be able to see.</li>
-<li><p>Since this is a public registration, you’ll notice that you can request a DOI/ARK ID for the registration. Especially if you are registering at the end of a project, the journal you a submitting to may require a DOI, and so registering the project is the way to get a DOI for the contents.</p>
+<li><p>This is an <code>OSF project associated with an article published in Frontiers</code>, which is an open access journal. The paper and supplemental materials were also made publicly available on the OSF.  <a href="https://osf.io/ixgcd/">OSF link here</a></p>
 </li>
-<li><p>For embargoed registrations, once the embargo ends and they become public, you can obtain a DOI for them.</p>
-</li>
-</ul>
-<hr>
-<h1 id="files-and-version-control">Files and Version Control</h1>
-<p>Now we want to start actually working on our project.</p>
-<p>We had previously uploaded our materials when we set up the storage, but now we need to make sure we upload our data.</p>
-<p>You always want to <strong>keep a copy of our complete, raw data file.</strong> Even if we end up doing a lot of data cleaning, or only using a subset of the datafile for our analyses, we want to keep a raw, untouched version of the data file to make sure we can always create our analyses from start to finish.</p>
-<hr>
-<h2 id="-activity-uploading-files-and-data-"><strong><em>Activity - Uploading files and data</em></strong></h2>
-<p><strong>Upload raw data file and data dictionary. Working with TIER demo files:</strong></p>
+<li><p>This paper has had a bit under 100 citations, which isn’t bad, but it’s not a huge amount of impact.</p>
 <ul>
-<li><p>Find the unzipped <code>TIER demo files</code> and upload it to the appropriate folder based on your TIER protocol structure in the OSF repository.</p>
-</li>
-<li><p>We also want to upload the data dictionary so we’ll always know what our variable names actually mean.</p>
+<li>If we click on the <strong>files tab</strong>, that will allow us to see the download counts for all the files. You can see that the paper has been downloaded around 6400 times, which is a ton.</li>
+</ul>
 </li>
 </ul>
-<hr>
-<p>so now we have the static version of all these different files, but in real research, things often change over time. We need a way to easily track those changes. This tracking of different versions of a file is usually called <strong>version control</strong>. Often times people have their own ad-hoc version control procedures which can be confusing.</p>
-<p>Poor version control can make finding files and recreating experiments/analyses very difficult, because in a few months it may take days for you to figure out, if you can at all, exactly what protocol was used, or exactly which analysis file was used to produce the results in the paper you submitted.</p>
-<p>We want to make sure this doesn’t happen to us.</p>
-<p>There are some programming languages out there that are specifically built for version control, many of you may have heard of <strong>Git and Github</strong>, and those are great, but they can prove to be a barrier to adoption of good version control methods for people who either don’t have the time or motivation to learn how to use them.</p>
-<p>The OSF has <strong>built in version control</strong> in an accessible way to help lower that barrier.</p>
-<p>Version control on the OSF works in a few different ways.</p>
-<ul>
-<li><p><strong>For text files:</strong> You can edit directly on the site and save the new versions. This is a possible with the wiki, and for anything that will render as a plain text file. So, if I go to the R script I uploaded, you’ll notice an ‘edit’ button in the top right corner. I can click on that, and edit this script directly on the OSF, and the edits will be saved as a new version, the same thing with the wiki.</p>
-</li>
-<li><p><strong>For non-text files:</strong> the procedure is a little different. You’ll open the file on your personal computer, and make any changes that you want. Then <strong>save the file with the exact same name on your computer.</strong> So, on your computer, you’ve just <strong>over-written</strong> the older version of the file. Now, go to the OSF and upload the file with the <strong>same name to the same component</strong>, once the file is uploaded you can click on that file and see that there are now 2 versions of the file, and you can toggle between them.</p>
-</li>
-</ul>
-<p>Now that I’ve shown the ways version control works on the system, I want you to edit your projects.</p>
-<h2 id="-activity-document-using-the-wiki-"><strong><em>Activity - Document Using the Wiki</em></strong></h2>
-<p><strong>update wiki to reflect analyses done &amp; clearly comment analysis scripts</strong></p>
-<p>Go into the wiki and update it so that it reflects that analyses you actually performed. One of you who didn’t run the analyses, please look at the analysis script that was uploaded, and edit it to make sure that it is clearly commented. How you do this will depend on the exact way in which the file was uploaded. If you don’t know how to comment in the particular language the analysis was done, ask the person who did the analyses.</p>
-<hr>
-<h2 id="-activity-create-a-readme-"><strong><em>Activity - Create a README</em></strong></h2>
-<p><strong>update wiki to include navigational README for the project</strong>
-The final thing we want to do is make sure that we give our future selves and, potentially, other people information about how to navigate our project.</p>
-<p>What are our files, where can we find things, if information is missing or private, why?</p>
-<p> Basically, we want to create a <strong>README</strong> for the project.</p>
-<p> We’ve already done a bit of this by putting information about the research question for the project in the wiki. But, we also want to add information there, and/or in the wikis of our subcomponents about what files are there and how to navigate through the project.</p>
-<hr></body>
+<p>Additionally, if we go to the <strong>Analytics tab</strong>, we can see how many people are viewing the cite and where in the world they are viewing it from.</p>
+<p>These view and download numbers are telling a much more impressive story than the citations; <strong>a lot of people are interested this project because they find the materials useful.</strong></p></body>
 </html>

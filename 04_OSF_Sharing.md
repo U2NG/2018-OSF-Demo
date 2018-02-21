@@ -1,8 +1,7 @@
-# OSF Demo for Sloan Scholars 2017
+# OSF GPS Lecture
 
-##### Lesson adapted from:
-Jolene Esposito OSF-Curriculum
-
+##### Lesson adapted from:   
+Jolene Esposito OSF-Curriculum   
 csoderberg OSF-Curriculum
 
 
@@ -39,7 +38,7 @@ You can make either the entire project, or specific subproject or components of 
 
 
 ## ***Tip***
-One important thing to consider before making anything public is whether it contains anything that you can’t make public for legal or ethical reasons.
+One important thing to consider before making anything `public` is whether it contains anything that you can’t make public for legal or ethical reasons.
 
 That might include materials that you used in your project that are perhaps copyrighted, or data-files that are not anonymous and so your IRB has told you that you can only make public the anonymous dataset.
 
@@ -53,14 +52,16 @@ One thing I could do would be to create another **component** under Data and mov
 
 Any file can be moved by simply clicking and dragging it to whichever part of the project you want to move it to.
 
-## ***Activity***
-Now that I’ve shown you how to move files, **discuss how much of your project you can/want to make public.
+## ***Activity - Make your project public***
+Now that we have uploaded and organized our files, let's make our project public.
 
-Make those sections of your project public, and if you need to reorganize any parts of your project to accomplish that, please do that now.**
+**discuss how much of your project you can/want to make public.**
+
+**Make those sections of your project public, and if you need to reorganize any parts of your project to accomplish that, please do that now.**
 
 
 ## Increasing Discoverability
-All projects, subprojects/components, and files on the OSF have **GUIDs.**
+All projects, sub-projects/components, and files on the OSF have **GUIDs.**
 
 To send people to a project I can send them that GUID, or put it in a paper to help people navigate to my materials.
 
@@ -68,24 +69,37 @@ However, we also want to make sure that our materials can be found by people who
 
 **We want to make sure it is discoverable.**
 
-Work posted on the OSF can be discovered in a couple of different ways.
+#### Searching:
+Work posted on the OSF can be discovered in a few different ways.
 
-* The first is through the search function within the OSF itself. We can search for anything we want, a project title, a general topic, a person’s name, and the system will bring up anything related to our search.
+* In the OSF:
+    * The first is through the `search function` within the OSF itself. We can search for anything we want, a project title, a general topic, a person’s name, and the system will bring up anything related to our search.
 
 You’ll see it will also make suggestions about ways to potentially refine your search.
 
-Public project on the OSF are also indexed by google, so they can be discovered outside the system. So, for example, if we go to google and search for ‘Daniel Lakens effect size’ his OSF project related to effect sizes comes up.
+* Using Google:   
+  * Public project on the OSF are also `indexed by google`, so they can be discovered outside the system. So, for example, if we go to google and search for `‘Daniel Lakens effect size’` his OSF project related to effect sizes comes up.
 
-* Finally, information that has been registered on the OSF is discoverable through the **SHARE** notification service. If we go to **osf.io/share**, this will allow us to search through the contents of over 50 different providers.
+* Share:    
+  * Finally, information that has been registered on the OSF is discoverable through the **SHARE** notification service. If we go to **osf.io/share**, this will allow us to search through the contents of over 50 different providers.
 
-* For SHARE specifically, only public registrations show up in the search results, which is another reason to register projects when you want to release a stable version of them.
+For SHARE specifically, `only public registrations show up in the search results`, which is another reason to register projects when you want to release a stable version of them.
 
 
-Part of making our work discoverable is making sure the right people find it through searches, so we want to make sure we understand how are work is being searched.
+* Part of making our work discoverable is making sure the right people find it through searches.
 
-Currently, the search on the OSF will search through contents in the wiki, project/component names, and tags. But it won’t search through individual files.  If you think there are a few important key words that people might use to search for your project that don’t appear in the wiki or project name, where do you put this information? **We can add tags** to our project to make it more discoverable.
+* We want to make sure we understand how are work is being searched.
 
-You’ll notice this **tags** area to the right of the screen. I can put whatever descriptors or keywords in here that I want to make it easier to discover my project for searching for related words/topics.
+* Currently, the search on the OSF will search through contents in the wiki, project/component names, and tags.
+
+* But it won’t search through individual files.  
+
+### ***Discussion***
+If you think there are a few important key words that people might use to search for your project that don’t appear in the wiki or project name, where do you put this information?    
+
+**We can add tags** to our project to make it more discoverable.
+
+* You’ll notice this **tags** area to the right of the screen. I can put whatever descriptors or keywords in here that I want to make it easier to discover my project for searching for related words/topics.
 
 ## ***Activity***
 **Add some tags that you think might be relevant to your project.**
@@ -98,19 +112,22 @@ The classic way many fields often talk about this is **citation counts.**
 
 Now, we know this isn’t a great metric, particularly for newer papers, but since there is still a heavy emphasis places on it, we want to make sure that whatever we make open can be cited by other people who used it.
 
-We talked before about how you can get DOIs for your work through public registrations.
+We talked before about how you can get DOIs for your work through public registrations. E.g. EZID (for UC) and DataCite, OSF GUID.
 
 **Every project and component on the OSF also has an automatically generated citation which uses the GUID of the page, so as long as you have the correct contributor list on your project, everyone can get credit for it.**
 
-But, since citation counts have limitations, what else could we use to measure the impact of our work?
+Since citation counts have limitations, what else could we use to measure the impact of our work?
 
 Two things we might be interested in are **views and downloads.** For all public projects we track how many people are visiting a page, and we track how often all files are downloaded.
 
+#### ***Daniel Lakens Example:***
+
 Now, your projects aren’t particularly old, so they probably won’t have very many views. But, if we search for **Daniel Lakens** and click on this project, we can see how views and downloads can give vastly different information than citation counts.
- * This is an OSF project associated with an article published in Frontiers, which is an open access journal. The paper and supplemental materials were also made publicly available on the OSF.
+ * This is an `OSF project associated with an article published in Frontiers`, which is an open access journal. The paper and supplemental materials were also made publicly available on the OSF.  [OSF link here](https://osf.io/ixgcd/)
 
- * This paper has had a bit under 100 citations, which isn’t bad, but it’s not a huge amount of impact. If we click on the **files tab**, that will allow us to see the download counts for all the files. You can see that the paper has been downloaded around 1500 times, which is a ton.
+ * This paper has had a bit under 100 citations, which isn’t bad, but it’s not a huge amount of impact.
+  * If we click on the **files tab**, that will allow us to see the download counts for all the files. You can see that the paper has been downloaded around 6400 times, which is a ton.
 
-Additionally, if we go to the **statistics tab**, we can see how many people are viewing the cite and where in the world they are viewing it from.
+Additionally, if we go to the **Analytics tab**, we can see how many people are viewing the cite and where in the world they are viewing it from.
 
 These view and download numbers are telling a much more impressive story than the citations; **a lot of people are interested this project because they find the materials useful.**
