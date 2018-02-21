@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>02_OSF_Project_Setup</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); border-image: initial; background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher {
+  background-color: #777;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #98c379;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="osf-gps-lecture">OSF GPS Lecture</h1>
+<h5 id="lesson-adapted-from-">Lesson adapted from:</h5>
+<p>Jolene Esposito OSF-Curriculum<br>csoderberg OSF-Curriculum</p>
+<h1 id="lesson-2-setting-up-a-project-space">Lesson 2: Setting up a project space</h1>
+<p>Learning objectives:</p>
+<ul>
+<li><p>Understand how to set up a centralized location for project storage/management.</p>
+</li>
+<li><p>Understand the purpose and use of the wiki.</p>
+</li>
+<li><p>Understand how the different ways folders and components can be used to organize a project.</p>
+</li>
+</ul>
+<h2 id="materials-overview">Materials Overview</h2>
+<h2 id="-activity-download-data-files-"><strong><em>Activity - Download Data Files</em></strong></h2>
+<ul>
+<li><strong>Download Sample Data Files from [public OSF project]</strong></li>
+<li>Unzip and copy the files to a folder called "OSF" on your desktop  </li>
+<li>Take poll for Google Drive, if class uses Google Drive, save files in GDrive</li>
+<li>Search OSF projects for <strong>"2018 GPS Data Management Template"</strong></li>
+<li><a href="https://osf.io/7z3jd/">Link to Project</a></li>
+</ul>
+<h2 id="creating-a-project-to-document-and-organize-a-project">Creating a project to document and organize a project</h2>
+<ul>
+<li><p>We talked before about the problems that can arise when we either don’t document work, or we try and go and back document work once a study is accepted for publication.</p>
+</li>
+<li><p>This becomes even more challenging when you have multiple collaborators, especially if they are at different institutions, and you have been sending materials back and forth by email.</p>
+</li>
+<li><p>What you’ll often end up with is a very distribute network of materials, so you’ll have some things on your computer, some things in dropbox, a bunch of different version of some things going back and forth in various email threads.</p>
+</li>
+<li><p>Collaborators perhaps getting out of version sync with each other…this makes it very difficult to try and go back and recreate the workflow or find particular files.</p>
+</li>
+<li><p>to solve some of these problems, we’re going to set up a collaborate space for our research study using the OSF to help document and organize our research all in one place for everyone involved in the project.</p>
+</li>
+</ul>
+<h2 id="project-dashboard-overview">Project dashboard Overview</h2>
+<ul>
+<li><p>Now that you’re all signed in, you should be all be seeing the <code>project dashboard</code>.</p>
+</li>
+<li><p>A <code>project</code> on the site can be anything: a lab group, an organization, a grant, a line of research, an individual experiment, etc.</p>
+</li>
+</ul>
+<h2 id="-activity-create-new-project-"><strong><em>Activity - Create New project</em></strong></h2>
+<p>Since we don’t have any projects yet, and we’re only going to be working on one research project, lets just <code>create a blank project</code>.</p>
+<ul>
+<li>click on the <code>create project</code> button, and give the project whatever <code>name</code> you like.</li>
+</ul>
+<p>You can also give it a <code>short description</code>, but not required.</p>
+<ul>
+<li>create the project</li>
+</ul>
+<p>As the project creator, you should now be seeing something that looks similar to my screen.</p>
+<ul>
+<li>Show the <code>project overview</code> page.</li>
+</ul>
+<p>Any project you create on the site will start out basically looking like this, and then you can customize it to fit the needs of that particular project or workflow.</p>
+<h4 id="review-osf-sections-">Review OSF sections:</h4>
+<p>The <strong>project overview</strong> page has a few different sections.</p>
+<ul>
+<li><p><strong>wiki</strong> is a collaborative editing space that you can use to include important overview information about the project, things like READMEs, abstracts, research questions, outlines, etc.</p>
+</li>
+<li><p><strong>file tree</strong> is how you upload and navigate to files to the system; you can upload basically any type of file that you want, everything from CSVs to word documents, to power points, to image and video files.</p>
+</li>
+<li><p><strong>Component</strong> section is how you add additional structure and nesting to your project</p>
+</li>
+<li><p><strong>citation widget</strong>, which shows you the automatically generated citation for the project</p>
+</li>
+<li><p><strong>GUID</strong> the little 5 letter string at the end of the <code>osf.io</code> url.  This <strong>entire address is a GUID, or a permanent, unique identifier.</strong> This address has been assigned to this project page and will point back to it unless the project is deleted.</p>
+</li>
+</ul>
+<h2 id="-discussion-"><strong><em>Discussion</em></strong></h2>
+<p><strong>Question/Demo:<br>What are collaborators/contributors seeing after typing in GUID of the project the administrator created?</strong></p>
+<ul>
+<li><strong>Try it out.</strong>  Ask to for someone to paste their GUID link into the Etherpad, copy and paste link in browser.  </li>
+</ul>
+<p><strong>Answer:</strong> You should be seeing a screen telling you that you <code>don’t have access</code> to the project.</p>
+<p>That’s because all projects on the OSF are set to <strong>private</strong> as a default.</p>
+<ul>
+<li><p>The <code>administrator/creator</code> is the only contributor on the project because they created it.</p>
+</li>
+<li><p>This means that only people who have been added as <strong>contributors</strong> to the project have access to it and can <code>see and/or edit</code> it.</p>
+</li>
+</ul>
+<h2 id="-activity-contributor-permissions-"><strong><em>Activity - Contributor Permissions</em></strong></h2>
+<ul>
+<li>Select a <code>collaborator</code> (someone sitting next to you).</li>
+</ul>
+<p>Since we want this to be a <strong>collaborative project</strong>, we need to <strong>change permissions for other people to access to the project.</strong></p>
+<ul>
+<li>Click on the <strong>contributors tab</strong>, this is how you can <code>add</code> people as contributors.</li>
+</ul>
+<p>In this section each person is given a permission setting for access to the project.</p>
+<p><strong> There are three possible settings: </strong></p>
+<ul>
+<li><p><strong>admin</strong> - <code>administrator</code> can do anything to the project and files.  Including changing permissions.</p>
+</li>
+<li><p><strong>read/write</strong> - have additional capabilities to add and modify files, but they <code>can’t change</code> any of the settings on the project (so for example they can’t add new contributors or change the privacy settings on the project).</p>
+</li>
+<li><p><strong>read</strong> - contributor can see into the project and can download any files they want, but they will <code>not be able to add any files or modify any content</code>.</p>
+</li>
+</ul>
+<h2 id="-activity-adding-a-contributor-"><strong><em>Activity - Adding a Contributor</em></strong></h2>
+<p><strong>Add a contributor/collaborator to your project.</strong></p>
+<ul>
+<li><p>You can decide what <code>level of access</code> you want to give your <code>collaborators</code>, but keep in mind that later on we are going to need the ability to upload files.</p>
+</li>
+<li><p><code>Collaborators</code> - try the <code>GUID</code> again, you should now be able to see the unrestricted project page.</p>
+</li>
+<li><p>check to make sure everyone is seeing their project page.</p>
+</li>
+<li><p>go back to the main project overview page.</p>
+</li>
+</ul>
+<p>Notice that <code>collaborators</code> are listed as <code>contributors</code> on the project, and that they are all now also <code>listed in the auto generated citation</code> for the project.</p>
+<h2 id="-tip-"><strong><em>Tip</em></strong></h2>
+<p>If for some reason you wanted to give someone access to the project but did not want to give them <code>authorship credit</code>, just acknowledgements, you can do this by going back to the <code>**sharing screen** and **unchecking** the **bibliographic contributor**</code> box next to that person’s name.</p>
+<h1 id="creating-a-wiki">Creating a wiki</h1>
+<p>Now that you have a project and someone has access, the first thing to do is start to document a bit of information about the project. e.g. Why we’re doing the project, what our initial research question is, etc.</p>
+<p>By documenting this upfront, it will be very easy for us to always go back and see how the project started out, as it evolves over the course of the research lifecycle.</p>
+<p>In the OSF, a good place to put this type of information is in the <strong>wiki</strong>.</p>
+<ul>
+<li><strong>wiki</strong> - a real time collaborative editor, so your whole team can work on it at once. It also can be formatted using markdown if you want to get fancy.</li>
+</ul>
+<p>You get into the <strong>wiki</strong> by <strong>clicking on the widget</strong>, and then click on the <strong>edit</strong> button in the upper right to open up the editor.</p>
+<h2 id="-activity-"><strong><em>Activity</em></strong></h2>
+<p><strong>Create wiki giving a brief description of the project.</strong></p>
+<ul>
+<li><p>Take a minute to <code>set up a wiki</code> for the project.</p>
+</li>
+<li><p>Enter some hypothetical text about your project, into the wiki section.</p>
+</li>
+</ul>
+<h1 id="adding-organizational-structure">Adding organizational structure</h1>
+<p>Right now our project is pretty flat. It is basically just one big folder with a wiki with some basic content in it.</p>
+<p>For most projects, we’ll want to add some <code>structure</code>.</p>
+<p>We can add <code>sections</code> to organize related files, for example we might want to organize all our data files together and separate those from files related to protocols or study materials.</p>
+<p>You can do this in two ways on the OSF depending on your preference.</p>
+<p><strong>1) First Way - Components:</strong></p>
+<ul>
+<li><p>The primary way to add structure to a project is to add <strong>components</strong>.</p>
+</li>
+<li><p>You do this by clicking the <strong>add component</strong> button on the right of the screen.</p>
+</li>
+</ul>
+<p>You can <code>name the component</code> whatever you want (materials, data, protocol, IRB, etc.) and you can also give it a <code>category</code>.</p>
+<p>Once the component is created, we can go into it and see that the inside of all components looks just like an empty project; they have their own file trees, wikis, contributor lists, and privacy settings.</p>
+<p><strong>2) Second Way: - Folders</strong></p>
+<p><strong>Folders</strong> are another organization option that function a bit differently.</p>
+<ul>
+<li><p>A folder is literally just a way to <code>group a set of files</code>, nothing more.</p>
+</li>
+<li><p>Click on the OSF storage icon and you will notice a <strong>create folder</strong> button will appear.</p>
+</li>
+<li><p>A folder will appear which we can then <code>rename</code> to whatever we want.</p>
+</li>
+</ul>
+<p><strong>Folders are just about organizing files together</strong>, while <strong>components</strong> are good for <code>setting up large sections</code> of a project.</p>
+<h2 id="folder-organization-using-the-tier-protocol-3-0-">Folder organization using the <strong>TIER Protocol 3.0</strong></h2>
+<p>One good example of folder organization is adding the <strong>TIER Protocol 3.0</strong> folder structure to the project.  </p>
+<p>The <code>TIER Protocol</code> (Teaching Integrity in Empirical Research) provides guidance to students conducting quantitative research to help ensure that their work is <code>transparent and reproducible</code>.</p>
+<p>The Specifications of the TIER Protocol give a complete description of the replication documentation that should be preserved with your study when you have finished the project.</p>
+<h4 id="this-documentation-includes-">This documentation includes:</h4>
+<ul>
+<li><p>The <code>data</code> used for the project.</p>
+</li>
+<li><p><code>Command files</code>, containing code written for your software, that clean and prepare the data as necessary, and then execute the procedures that generate the results reported in your study.</p>
+</li>
+<li><p>Various forms of <code>supporting information</code> to help a user understand and make use of your documentation.</p>
+</li>
+</ul>
+<p>Link to TIER site:<br><a href="http://www.projecttier.org/tier-protocol/specifications/">http://www.projecttier.org/tier-protocol/specifications/</a></p>
+<h3 id="-tip-"><strong><em>Tip</em></strong></h3>
+<p>You can also <code>nest components</code> within components.</p>
+<p>This allows you to set up areas that have different privacy settings or contributor lists from other sections in the project, which can be important for having fine grained control over access to different parts of a project.</p>
+<h2 id="-activity-tier-protocol-v3-setup-"><strong><em>Activity - TIER Protocol v3 Setup</em></strong></h2>
+<p><strong>Create project structure using folders/components</strong></p>
+<p>Set up some <code>initial structure</code> for your project.</p>
+<p>Think through what are the major categories of file types you’ll have, and whether you might want to have different contributors or public vs. private access setting for them to determine whether you want to set them up as folders or components.</p>
+<ul>
+<li><p>For this example, Let's setup the <code>TIER Protocol 3.0 folder structure</code>.<br>Show TIER folder structure image. <a href="https://bucketeer-82911c16-8ccd-4854-b255-5b3ebba24d7c.s3.amazonaws.com/images/TIER-folder-illustration-v3.0.width-800.png?Signature=zPVPApp1W8s%2BLDjCb8W0cCOtfU0%3D&amp;Expires=1519196929&amp;AWSAccessKeyId=AKIAII43OBBLSEWFDW2A">TIER Structure Image</a></p>
+</li>
+<li><p>Create the <code>Replication Documentation</code> structure in <code>OSF Storage</code>:<br>1.[Main Folder] Replication Documentation - folders<br>2.[subfolder] Analysis-Data<br>3.[subfolder] Command-Files<br>4.[subfolder] Documents<br>5.[subfolder] Original-Data<br>6.Subfolder in Original-data] Metadata   </p>
+</li>
+<li><p>Note you can setup this structure in the components to have more control of your data sharing.</p>
+</li>
+</ul>
+<h1 id="add-ons">Add-ons</h1>
+<p>The last thing we’re going to do for this lesson is to add some background literature to the project.</p>
+<p>we’re going to take advantage of the OSFs add-on capabilities.</p>
+<ul>
+<li><p><code>Add-ons</code> allow you to connect third party services to the OSF so you can continue to use the tools that you like, but connect them so that you, your collaborators, and readers of your work, only have to go to one place to find all aspects of your project.</p>
+</li>
+<li><p>If you go to the <strong>settings</strong> page of your project you can see the different add-ons that are available.</p>
+</li>
+</ul>
+<h2 id="-activity-adding-storage-add-ons-"><strong><em>Activity - Adding Storage Add-ons</em></strong></h2>
+<ul>
+<li><strong>Using one of the storage add-ons.</strong></li>
+</ul>
+<p>I’m going to show the <code>Google Drive add-on</code>, but if you don’t have a Drive account you can use Box or anything on the list.</p>
+<ul>
+<li><p>find the files we shared for this lesson.</p>
+</li>
+<li><p>Log into into your chosen storage account and <code>create a folder</code> called <strong>2018 GPS project</strong> and then upload the files to that folder.</p>
+</li>
+<li><p>Now, go to your <strong>OSF project and create a new component</strong> for the files just uploaded.</p>
+</li>
+</ul>
+<h3 id="tip">TIP</h3>
+<p>We don’t have to put the add-on in it’s own component, but this will allow us to <code>keep these PDFs private if we decide we want to make the rest of the project public</code>.</p>
+<ul>
+<li>When you’re inside the new <strong>project component</strong>, go to the <strong>settings tab</strong> and check the <code>Google Drive add-on</code>, or whichever one you are going to use.</li>
+</ul>
+<p>This will bring up some information on exactly how this add-on will function.</p>
+<ul>
+<li>Click <strong>confirm</strong>, and then click <strong>apply</strong> below the list of add-ons.</li>
+</ul>
+<p>You will then be asked to connect your account.</p>
+<p>You’ll be taken to Google Drive where you will have to <code>input your gdrive username and password</code>, and will then be asked to allow OSF access to your Google Drive.</p>
+<ul>
+<li><p>Back at the OSF, you’ll now see a list of all your Google Drive folders in your project.</p>
+</li>
+<li><p><strong>Select whichever folder you want to connect</strong> to your project and click <strong>save.</strong></p>
+</li>
+<li><p>Go back to your project and you will see that the files appear within the demo project component.</p>
+</li>
+</ul>
+<p>What this has done is create a two-way door between the OSF and Google Drive.</p>
+<p>Any changes we make to that Google Drive folder will show up in our project, and any changes we make to the materials from the OSF will show up in Google Drive.</p>
+<h3 id="warning-">Warning!</h3>
+<p>Files deleted in the OSF add-on will <code>DELETE</code> from the original storage location.  </p></body>
+</html>

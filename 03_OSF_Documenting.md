@@ -1,8 +1,7 @@
-# OSF Demo for Sloan Scholars 2017
+# OSF GPS Lecture
 
 ##### Lesson adapted from:
-Jolene Esposito OSF-Curriculum
-
+Jolene Esposito OSF-Curriculum   
 csoderberg OSF-Curriculum
 
 
@@ -20,11 +19,12 @@ Learning objectives:
  * GUIDs/DOIs
 
 ## Registrations (Overview)
-There are also specific points in a projects life that may be particularly important and that we may want to freeze and always be able to go back to. For example, what the project looked like just before we started data collection (often called a pre-registration), or what the project looked like when it was accepted for publication are two points that we may want to easily be able to get back to, or easily share with others.
+There are also specific points in a projects life that may be particularly important and that we may want to `freeze` and always be able to go back to.
+ * For example, what the project looked like just before we started data collection (often called a pre-registration), or what the project looked like when it was accepted for publication are two points that we may want to easily be able to get back to, or easily share with others.
 
 One way to keep track of these important points is to **create registrations**.
 
-A **registration** creates a frozen snapshot of a project, or section of a project, that can never be deleted or changed.
+A **registration** creates a `frozen snapshot` of a project, or section of a project, that can never be deleted or changed.
 
  Basically, it’s a **permanent, read-only copy of that part of the project.**
 
@@ -33,7 +33,7 @@ A **registration** creates a frozen snapshot of a project, or section of a proje
 
  **Do not follow along** with this section, as registrations are **not reversible.**
 
-### Demo Registrations
+### Demo Registrations (Review and Discuss only)
 * First thing is to click on the **registration** tab on the top of the project.
 
 * **Note that this will register the part of the project you’re currently in, and all components and folders nested within this part of the project.**
@@ -46,15 +46,17 @@ A **registration** creates a frozen snapshot of a project, or section of a proje
  * make them **public immediately**, which means anyone will be able to see them
 
  * you can **place an embargo** on the registration.  
-   * If you choose to embargo, the project will be immediately registered, but the registration will not be made public until after the embargo date that you specify. You can embargo registrations for up to four years, but after that they must become public.
+   * If you choose to `embargo`, the project will be immediately registered, but the registration will not be made public until after the embargo date that you specify. You can embargo registrations for up to four years, but after that they must become public.
 
 #### ***Note about Embargoes***
 
 Why might you want to set an embargo date?
 
-If you are doing a preregistration, and your study hasn’t happened yet, you may want to embargo the registration so that participants and/or RAs cannot discover what you’re hypotheses are in order to preserve blinding in your study. Some researchers are also afraid of being ‘scooped’ and so they may not want to release their study protocol before the study is completed. If you are doing a a registration after a study has finished, you may also need the embargo feature because the journal you submitted to may have an embargo period. All these are valid reasons, which is why we give the option of either embargoes or immediate public release for registrations.
+* If you are doing a preregistration, and your study hasn’t happened yet, you may want to embargo the registration so that participants and/or RAs cannot discover what you’re hypotheses are in order to preserve blinding in your study.
 
-If you choose the embargo feature, an email will be sent to all the administrators on the project, asking if they want to cancel the registration, since you can’t undo registrations or change embargo dates after the fact. **If any of the admins cancels the registration within 48 hours, the registration does not occur.** If they all either approve it, or ignore the email, the registration goes through and the embargo period is set.
+* Some researchers are also afraid of being ‘scooped’ and so they may not want to release their study protocol before the study is completed. If you are doing a a registration after a study has finished, you may also need the embargo feature because the journal you submitted to may have an embargo period. All these are valid reasons, which is why we give the option of either embargoes or immediate public release for registrations.
+
+If you choose the `embargo feature`, an email will be sent to all the administrators on the project, asking if they want to cancel the registration, since you `can’t undo registrations or change embargo dates` after the fact. **If any of the admins cancels the registration within 48 hours, the registration does not occur.** If they all either approve it, or ignore the email, the registration goes through and the embargo period is set.
 
 
 
@@ -62,13 +64,12 @@ If you choose the embargo feature, an email will be sent to all the administrato
 
 A few things to notice about the registration.
 
-* Firstly, the registration GUID is different from the projects, so you can easily use the links to send people to either the project, or the registration, whichever is more appropriate.
+* Firstly, the `registration GUID` is different from the projects, so you can easily use the links to send people to either the project, or the registration, whichever is more appropriate.
 
-For this registration, I chose to make it public immediately.
+Just like the actual project and registration have different GUIDs, they also have `different privacy settings`.
 
-Just like the actual project and registration have different GUIDs, they also have different privacy settings.
-
-Even though the registration is public, the actual project is still private, and I can make changes to that project which non-contributors will not be able to see. Since this is a public registration, you’ll notice that you can request a DOI/ARK ID for the registration. Especially if you are registering at the end of a project, the journal you a submitting to may require a DOI, and so registering the project is the way to get a DOI for the contents.
+* Even though the registration is public, the actual project is still private, and I can make changes to that project which non-contributors will not be able to see.
+* Since this is a public registration, you’ll notice that you can request a DOI/ARK ID for the registration. Especially if you are registering at the end of a project, the journal you a submitting to may require a DOI, and so registering the project is the way to get a DOI for the contents.
 
 * For embargoed registrations, once the embargo ends and they become public, you can obtain a DOI for them.
 
@@ -83,7 +84,7 @@ You always want to **keep a copy of our complete, raw data file.** Even if we en
 
 ---
 
-## ***Activity***
+## ***Activity - Uploading files and data***
 **Upload raw data file and data dictionary.**
 
 * Name the data file accordingly and upload it to the appropriate folder based on your TIER protocol structure.
@@ -111,7 +112,7 @@ Version control on the OSF works in a few different ways.
 
 Now that I’ve shown the ways version control works on the system, I want you to edit your projects.
 
-## ***Activity***
+## ***Activity - Document Using the Wiki***
 **update wiki to reflect analyses done & clearly comment analysis scripts**
 
 Go into the wiki and update it so that it reflects that analyses you actually performed. One of you who didn’t run the analyses, please look at the analysis script that was uploaded, and edit it to make sure that it is clearly commented. How you do this will depend on the exact way in which the file was uploaded. If you don’t know how to comment in the particular language the analysis was done, ask the person who did the analyses.
