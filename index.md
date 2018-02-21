@@ -3,8 +3,8 @@ OSF materials for School of Global Policy and Strategy Skills Course
 
 0. Setup  
   * [Data zip files](https://github.com/ucsdlib/GPS-OSF-Lecture/tree/master/data)
-1. [Introduction](https://github.com/ucsdlib/GPS-OSF-Lecture/blob/master/01_OSF_introduction.html)
-2. [Project setup](https://github.com/ucsdlib/GPS-OSF-Lecture/blob/master/02_OSF_Project_Setup.html)
-3. [Documenting](https://github.com/ucsdlib/GPS-OSF-Lecture/blob/master/03_OSF_Documenting.html)
-4. [Sharing](https://github.com/ucsdlib/GPS-OSF-Lecture/blob/master/04_OSF_Sharing.html)
-5. [Conclusion](https://github.com/ucsdlib/GPS-OSF-Lecture/blob/master/05_OSF_Conclusion.html)
+1. [Introduction](https://ucsdlib.github.io/GPS-OSF-Lecture/01_OSF_introduction.html)
+2. [Project setup](https://ucsdlib.github.io/GPS-OSF-Lecture/02_OSF_Project_Setup.html)
+3. [Documenting](https://ucsdlib.github.io/GPS-OSF-Lecture/03_OSF_Documenting.html)
+4. [Sharing](https://ucsdlib.github.io/GPS-OSF-Lecture/04_OSF_Sharing.html)
+5. [Conclusion](https://ucsdlib.github.io/GPS-OSF-Lecture/05_OSF_Conclusion.html)
