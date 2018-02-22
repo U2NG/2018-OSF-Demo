@@ -1,6 +1,6 @@
 # OSF GPS Lecture
 
-##### Lesson adapted from:  
+##### Lesson adapted from:    
 Jolene Esposito OSF-Curriculum  
 csoderberg OSF-Curriculum
 
@@ -21,7 +21,7 @@ Learning objectives:
 * **Download Sample Data Files from [public OSF project]**
 * Unzip and copy the files to a folder called "OSF" on your desktop  
 * Take poll for Google Drive, if class uses Google Drive, save files in GDrive
-* Search OSF projects for **"2018 GPS Data Management Template"**
+* In OSF, search OSF projects for **"2018 GPS Data Management Template"**
 * [Link to Project](https://osf.io/7z3jd/)
 
 ## Creating a project to document and organize a project
