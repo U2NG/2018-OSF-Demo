@@ -1,2 +1,3 @@
-# GPS OSF workshop materials
-OSF materials for School of Global Policy and Strategy Skills Course
+# OSF demo/workshop materials
+OSF overview materials for demos and workshops
+
