@@ -1,4 +1,4 @@
-# OSF GPS Lecture
+# Open Science Framework Demo
 
 ##### Lesson adapted from:
 Jolene Esposito OSF-Curriculum
