@@ -1,4 +1,4 @@
-# OSF GPS Lecture
+# OSF Demo Lecture
 
 ##### Lesson adapted from:   
 Jolene Esposito OSF-Curriculum   

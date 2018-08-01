@@ -196,7 +196,7 @@ Set up some `initial structure` for your project.
 Think through what are the major categories of file types you’ll have, and whether you might want to have different contributors or public vs. private access setting for them to determine whether you want to set them up as folders or components.
 
 * For this example, Let's setup the `TIER Protocol 3.0 folder structure`.   
-Show TIER folder structure image. [TIER Structure Image](https://bucketeer-82911c16-8ccd-4854-b255-5b3ebba24d7c.s3.amazonaws.com/images/TIER-folder-illustration-v3.0.width-800.png?Signature=zPVPApp1W8s%2BLDjCb8W0cCOtfU0%3D&Expires=1519196929&AWSAccessKeyId=AKIAII43OBBLSEWFDW2A)
+Show TIER folder structure image. [TIER Structure Image](https://osf.io/etshb/)
 
 * Create the `Replication Documentation` structure in `OSF Storage`:  
 1.[Main Folder] Replication Documentation - folders   
