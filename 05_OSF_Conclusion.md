@@ -19,7 +19,7 @@ Figuring out how to apply examples to your particular needs can be challenging. 
 
 ## Where to get help?
 
-* If you want to review any of the lesson materials, it will be available in TritonEd and in [Github](https://ucsdlib.github.io/GPS-OSF-Lecture/)
+* If you want to review any of the lesson materials, it will be available in [Github](https://u2ng.github.io/2018-OSF-Demo/)
 
 
 * If you need help with the OSF for Institutions at UC San Diego visit the **Library Data & GIS Lab** or contact the **Research Data Curation Program:    

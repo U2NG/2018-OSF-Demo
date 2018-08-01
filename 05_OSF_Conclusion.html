@@ -83,7 +83,7 @@
 .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
 .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
 .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
 .markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
 .markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
 .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
@@ -105,8 +105,9 @@
   border-bottom: 1px dotted lime;
   position: absolute;
 }
-.line-number.bracket-matcher {
-  background-color: #777;
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
 }
 
 .spell-check-misspelling .region {
@@ -164,7 +165,7 @@ pre.editor-colors .gutter .line-number {
 }
 pre.editor-colors .gutter .line-number.cursor-line {
   color: #abb2bf;
-  background-color: #2c313a;
+  background-color: #3a3f4b;
 }
 pre.editor-colors .gutter .line-number.cursor-line-no-selection {
   background-color: transparent;
@@ -352,7 +353,6 @@ pre.editor-colors .fold-marker:after {
   color: #c678dd;
 }
 .syntax--meta.syntax--separator {
-  background-color: #373b41;
   color: #abb2bf;
 }
 .syntax--meta.syntax--tag {
@@ -432,6 +432,10 @@ pre.editor-colors .fold-marker:after {
 .syntax--source.syntax--elixir .syntax--variable.syntax--definition,
 .syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
   color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
 }
 .syntax--source.syntax--elixir .syntax--quoted {
   color: #98c379;
@@ -518,6 +522,9 @@ pre.editor-colors .fold-marker:after {
 .syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
   color: inherit;
 }
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
 .syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
   color: #c678dd;
 }
@@ -526,7 +533,7 @@ pre.editor-colors .fold-marker:after {
 }
 </style>
   </head>
-  <body class='markdown-preview' data-use-github-style><h1 id="osf-gps-lecture">OSF GPS Lecture</h1>
+  <body class='markdown-preview' data-use-github-style><h1 id="osf-demo-lecture">OSF Demo Lecture</h1>
 <h5 id="lesson-adapted-from-csoderberg-osf-curriculum-https-github-com-csoderberg-osf-curriculum">Lesson adapted from csoderberg OSF-Curriculum <a href="https://github.com/csoderberg/OSF-Curriculum">https://github.com/csoderberg/OSF-Curriculum</a></h5>
 <h1 id="conclusion">Conclusion</h1>
 <h2 id="take-aways">Take-aways</h2>
@@ -541,16 +548,16 @@ pre.editor-colors .fold-marker:after {
 <p>Figuring out how to apply examples to your particular needs can be challenging. So, before I open it up to questions and discussion here is where you can get help after this workshop.</p>
 <h2 id="where-to-get-help-">Where to get help?</h2>
 <ul>
-<li>If you want to review any of the lesson materials, it will be available in TritonEd and in <a href="https://ucsdlib.github.io/GPS-OSF-Lecture/">Github</a></li>
+<li>If you want to review any of the lesson materials, it will be available in <a href="https://u2ng.github.io/2018-OSF-Demo/">Github</a></li>
 </ul>
 <ul>
-<li><p>If you need help with the OSF for Institutions at UC San Diego visit the <strong>Library Data &amp; GIS Lab</strong> or contact the <strong>Research Data Curation Program:<br>research-data-curation@ucsd.edu</strong></p>
+<li><p>If you need help with the OSF for Institutions at UC San Diego visit the <strong>Library Data &amp; GIS Lab</strong> or contact the <strong>Research Data Curation Program:<br><a href="mailto:research-data-curation@ucsd.edu">research-data-curation@ucsd.edu</a></strong></p>
 </li>
 <li><p>If you have specific questions, the Center for Open Science provides completely free, one-on-one stats and methods consulting over email and google hangouts:
-<strong>stats-consulting@cos.io</strong></p>
+<a href="mailto:**stats-consulting@cos.io">**stats-consulting@cos.io</a>**</p>
 </li>
 <li><p>If you have questions about the OSF, there is a helpdesk manned by a real person who can help you through any issues or questions you might have:
-<strong>support@osf.io</strong></p>
+<a href="mailto:**support@osf.io">**support@osf.io</a>**</p>
 </li>
 </ul></body>
 </html>
