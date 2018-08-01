@@ -18,7 +18,8 @@ Learning objectives:
 ## Materials Overview
 
 ## ***Activity - Download Data Files***
-* **Download Sample Data Files from [public OSF project]**
+* **Download Sample Data Files from [public OSF project -
+Replication Documentation for Midlife Crisis Paper not organized 2.zip](https://osf.io/xjguq/)**
 * Unzip and copy the files to a folder called "OSF" on your desktop  
 * Take poll for Google Drive, if class uses Google Drive, save files in GDrive
 * In OSF, search OSF projects for **"FSCI AM6 TIER Folder Example"**
