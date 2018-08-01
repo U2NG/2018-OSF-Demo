@@ -1,8 +1,11 @@
-# GPS OSF workshop materials
-OSF materials for School of Global Policy and Strategy Skills Course
+# OSF Demo workshop materials
+OSF Demo materials and lesson
 
 0. Setup  
-  * [Data zip files](https://github.com/ucsdlib/GPS-OSF-Lecture/tree/master/data)
+  [Data zip files](https://github.com/ucsdlib/GPS-OSF-Lecture/tree/master/data)    
+  [OSF Template Data Files (zip)](https://osf.io/qbzp5/)
+
+
 1. [Introduction](https://u2ng.github.io/2018-OSF-Demo/01_OSF_introduction.html)
 2. [Project setup](https://u2ng.github.io/2018-OSF-Demo/02_OSF_Project_Setup.html)
 3. [Documenting](https://u2ng.github.io/2018-OSF-Demo/03_OSF_Documenting.html)
