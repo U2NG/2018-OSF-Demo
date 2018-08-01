@@ -83,7 +83,7 @@
 .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
 .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
 .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
 .markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
 .markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
 .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
@@ -105,8 +105,9 @@
   border-bottom: 1px dotted lime;
   position: absolute;
 }
-.line-number.bracket-matcher {
-  background-color: #777;
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
 }
 
 .spell-check-misspelling .region {
@@ -164,7 +165,7 @@ pre.editor-colors .gutter .line-number {
 }
 pre.editor-colors .gutter .line-number.cursor-line {
   color: #abb2bf;
-  background-color: #2c313a;
+  background-color: #3a3f4b;
 }
 pre.editor-colors .gutter .line-number.cursor-line-no-selection {
   background-color: transparent;
@@ -352,7 +353,6 @@ pre.editor-colors .fold-marker:after {
   color: #c678dd;
 }
 .syntax--meta.syntax--separator {
-  background-color: #373b41;
   color: #abb2bf;
 }
 .syntax--meta.syntax--tag {
@@ -432,6 +432,10 @@ pre.editor-colors .fold-marker:after {
 .syntax--source.syntax--elixir .syntax--variable.syntax--definition,
 .syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
   color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
 }
 .syntax--source.syntax--elixir .syntax--quoted {
   color: #98c379;
@@ -518,6 +522,9 @@ pre.editor-colors .fold-marker:after {
 .syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
   color: inherit;
 }
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
 .syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
   color: #c678dd;
 }
@@ -526,7 +533,7 @@ pre.editor-colors .fold-marker:after {
 }
 </style>
   </head>
-  <body class='markdown-preview' data-use-github-style><h1 id="osf-gps-lecture">OSF GPS Lecture</h1>
+  <body class='markdown-preview' data-use-github-style><h1 id="open-science-framework-demo">Open Science Framework Demo</h1>
 <h5 id="lesson-adapted-from-">Lesson adapted from:</h5>
 <p>Jolene Esposito OSF-Curriculum<br>csoderberg OSF-Curriculum</p>
 <h1 id="lesson-2-setting-up-a-project-space">Lesson 2: Setting up a project space</h1>
@@ -540,13 +547,13 @@ pre.editor-colors .fold-marker:after {
 </li>
 </ul>
 <h2 id="materials-overview">Materials Overview</h2>
-<h2 id="-activity-download-data-files-"><strong><em>Activity - Download Data Files</em></strong></h2>
+<h2 id="activity-download-data-files"><strong><em>Activity - Download Data Files</em></strong></h2>
 <ul>
 <li><strong>Download Sample Data Files from [public OSF project]</strong></li>
 <li>Unzip and copy the files to a folder called "OSF" on your desktop  </li>
 <li>Take poll for Google Drive, if class uses Google Drive, save files in GDrive</li>
-<li>Search OSF projects for <strong>"2018 GPS Data Management Template"</strong></li>
-<li><a href="https://osf.io/7z3jd/">Link to Project</a></li>
+<li>In OSF, search OSF projects for <strong>"FSCI AM6 TIER Folder Example"</strong></li>
+<li><a href="https://osf.io/a2ydp/">Link to Project</a></li>
 </ul>
 <h2 id="creating-a-project-to-document-and-organize-a-project">Creating a project to document and organize a project</h2>
 <ul>
@@ -563,23 +570,23 @@ pre.editor-colors .fold-marker:after {
 </ul>
 <h2 id="project-dashboard-overview">Project dashboard Overview</h2>
 <ul>
-<li><p>Now that you’re all signed in, you should be all be seeing the <code>project dashboard</code>.</p>
+<li><p>Now that you’re all signed in, you should be all be seeing the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">project dashboard</code>.</p>
 </li>
-<li><p>A <code>project</code> on the site can be anything: a lab group, an organization, a grant, a line of research, an individual experiment, etc.</p>
+<li><p>A <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">project</code> on the site can be anything: a lab group, an organization, a grant, a line of research, an individual experiment, etc.</p>
 </li>
 </ul>
-<h2 id="-activity-create-new-project-"><strong><em>Activity - Create New project</em></strong></h2>
-<p>Since we don’t have any projects yet, and we’re only going to be working on one research project, lets just <code>create a blank project</code>.</p>
+<h2 id="activity-create-new-project"><strong><em>Activity - Create New project</em></strong></h2>
+<p>Since we don’t have any projects yet, and we’re only going to be working on one research project, lets just <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">create a blank project</code>.</p>
 <ul>
-<li>click on the <code>create project</code> button, and give the project whatever <code>name</code> you like.</li>
+<li>click on the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">create project</code> button, and give the project whatever <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">name</code> you like.</li>
 </ul>
-<p>You can also give it a <code>short description</code>, but not required.</p>
+<p>You can also give it a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">short description</code>, but not required.</p>
 <ul>
 <li>create the project</li>
 </ul>
 <p>As the project creator, you should now be seeing something that looks similar to my screen.</p>
 <ul>
-<li>Show the <code>project overview</code> page.</li>
+<li>Show the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">project overview</code> page.</li>
 </ul>
 <p>Any project you create on the site will start out basically looking like this, and then you can customize it to fit the needs of that particular project or workflow.</p>
 <h4 id="review-osf-sections-">Review OSF sections:</h4>
@@ -593,55 +600,55 @@ pre.editor-colors .fold-marker:after {
 </li>
 <li><p><strong>citation widget</strong>, which shows you the automatically generated citation for the project</p>
 </li>
-<li><p><strong>GUID</strong> the little 5 letter string at the end of the <code>osf.io</code> url.  This <strong>entire address is a GUID, or a permanent, unique identifier.</strong> This address has been assigned to this project page and will point back to it unless the project is deleted.</p>
+<li><p><strong>GUID</strong> the little 5 letter string at the end of the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">osf.io</code> url.  This <strong>entire address is a GUID, or a permanent, unique identifier.</strong> This address has been assigned to this project page and will point back to it unless the project is deleted.</p>
 </li>
 </ul>
-<h2 id="-discussion-"><strong><em>Discussion</em></strong></h2>
+<h2 id="discussion"><strong><em>Discussion</em></strong></h2>
 <p><strong>Question/Demo:<br>What are collaborators/contributors seeing after typing in GUID of the project the administrator created?</strong></p>
 <ul>
 <li><strong>Try it out.</strong>  Ask to for someone to paste their GUID link into the Etherpad, copy and paste link in browser.  </li>
 </ul>
-<p><strong>Answer:</strong> You should be seeing a screen telling you that you <code>don’t have access</code> to the project.</p>
+<p><strong>Answer:</strong> You should be seeing a screen telling you that you <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">don’t have access</code> to the project.</p>
 <p>That’s because all projects on the OSF are set to <strong>private</strong> as a default.</p>
 <ul>
-<li><p>The <code>administrator/creator</code> is the only contributor on the project because they created it.</p>
+<li><p>The <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">administrator/creator</code> is the only contributor on the project because they created it.</p>
 </li>
-<li><p>This means that only people who have been added as <strong>contributors</strong> to the project have access to it and can <code>see and/or edit</code> it.</p>
+<li><p>This means that only people who have been added as <strong>contributors</strong> to the project have access to it and can <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">see and/or edit</code> it.</p>
 </li>
 </ul>
-<h2 id="-activity-contributor-permissions-"><strong><em>Activity - Contributor Permissions</em></strong></h2>
+<h2 id="activity-contributor-permissions"><strong><em>Activity - Contributor Permissions</em></strong></h2>
 <ul>
-<li>Select a <code>collaborator</code> (someone sitting next to you).</li>
+<li>Select a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">collaborator</code> (someone sitting next to you).</li>
 </ul>
 <p>Since we want this to be a <strong>collaborative project</strong>, we need to <strong>change permissions for other people to access to the project.</strong></p>
 <ul>
-<li>Click on the <strong>contributors tab</strong>, this is how you can <code>add</code> people as contributors.</li>
+<li>Click on the <strong>contributors tab</strong>, this is how you can <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">add</code> people as contributors.</li>
 </ul>
 <p>In this section each person is given a permission setting for access to the project.</p>
 <p><strong> There are three possible settings: </strong></p>
 <ul>
-<li><p><strong>admin</strong> - <code>administrator</code> can do anything to the project and files.  Including changing permissions.</p>
+<li><p><strong>admin</strong> - <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">administrator</code> can do anything to the project and files.  Including changing permissions.</p>
 </li>
-<li><p><strong>read/write</strong> - have additional capabilities to add and modify files, but they <code>can’t change</code> any of the settings on the project (so for example they can’t add new contributors or change the privacy settings on the project).</p>
+<li><p><strong>read/write</strong> - have additional capabilities to add and modify files, but they <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">can’t change</code> any of the settings on the project (so for example they can’t add new contributors or change the privacy settings on the project).</p>
 </li>
-<li><p><strong>read</strong> - contributor can see into the project and can download any files they want, but they will <code>not be able to add any files or modify any content</code>.</p>
+<li><p><strong>read</strong> - contributor can see into the project and can download any files they want, but they will <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">not be able to add any files or modify any content</code>.</p>
 </li>
 </ul>
-<h2 id="-activity-adding-a-contributor-"><strong><em>Activity - Adding a Contributor</em></strong></h2>
+<h2 id="activity-adding-a-contributor"><strong><em>Activity - Adding a Contributor</em></strong></h2>
 <p><strong>Add a contributor/collaborator to your project.</strong></p>
 <ul>
-<li><p>You can decide what <code>level of access</code> you want to give your <code>collaborators</code>, but keep in mind that later on we are going to need the ability to upload files.</p>
+<li><p>You can decide what <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">level of access</code> you want to give your <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">collaborators</code>, but keep in mind that later on we are going to need the ability to upload files.</p>
 </li>
-<li><p><code>Collaborators</code> - try the <code>GUID</code> again, you should now be able to see the unrestricted project page.</p>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Collaborators</code> - try the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">GUID</code> again, you should now be able to see the unrestricted project page.</p>
 </li>
 <li><p>check to make sure everyone is seeing their project page.</p>
 </li>
 <li><p>go back to the main project overview page.</p>
 </li>
 </ul>
-<p>Notice that <code>collaborators</code> are listed as <code>contributors</code> on the project, and that they are all now also <code>listed in the auto generated citation</code> for the project.</p>
-<h2 id="-tip-"><strong><em>Tip</em></strong></h2>
-<p>If for some reason you wanted to give someone access to the project but did not want to give them <code>authorship credit</code>, just acknowledgements, you can do this by going back to the <code>**sharing screen** and **unchecking** the **bibliographic contributor**</code> box next to that person’s name.</p>
+<p>Notice that <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">collaborators</code> are listed as <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">contributors</code> on the project, and that they are all now also <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">listed in the auto generated citation</code> for the project.</p>
+<h2 id="tip"><strong><em>Tip</em></strong></h2>
+<p>If for some reason you wanted to give someone access to the project but did not want to give them <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">authorship credit</code>, just acknowledgements, you can do this by going back to the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">**sharing screen** and **unchecking** the **bibliographic contributor**</code> box next to that person’s name.</p>
 <h1 id="creating-a-wiki">Creating a wiki</h1>
 <p>Now that you have a project and someone has access, the first thing to do is start to document a bit of information about the project. e.g. Why we’re doing the project, what our initial research question is, etc.</p>
 <p>By documenting this upfront, it will be very easy for us to always go back and see how the project started out, as it evolves over the course of the research lifecycle.</p>
@@ -650,18 +657,18 @@ pre.editor-colors .fold-marker:after {
 <li><strong>wiki</strong> - a real time collaborative editor, so your whole team can work on it at once. It also can be formatted using markdown if you want to get fancy.</li>
 </ul>
 <p>You get into the <strong>wiki</strong> by <strong>clicking on the widget</strong>, and then click on the <strong>edit</strong> button in the upper right to open up the editor.</p>
-<h2 id="-activity-"><strong><em>Activity</em></strong></h2>
+<h2 id="activity"><strong><em>Activity</em></strong></h2>
 <p><strong>Create wiki giving a brief description of the project.</strong></p>
 <ul>
-<li><p>Take a minute to <code>set up a wiki</code> for the project.</p>
+<li><p>Take a minute to <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">set up a wiki</code> for the project.</p>
 </li>
 <li><p>Enter some hypothetical text about your project, into the wiki section.</p>
 </li>
 </ul>
 <h1 id="adding-organizational-structure">Adding organizational structure</h1>
 <p>Right now our project is pretty flat. It is basically just one big folder with a wiki with some basic content in it.</p>
-<p>For most projects, we’ll want to add some <code>structure</code>.</p>
-<p>We can add <code>sections</code> to organize related files, for example we might want to organize all our data files together and separate those from files related to protocols or study materials.</p>
+<p>For most projects, we’ll want to add some <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">structure</code>.</p>
+<p>We can add <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sections</code> to organize related files, for example we might want to organize all our data files together and separate those from files related to protocols or study materials.</p>
 <p>You can do this in two ways on the OSF depending on your preference.</p>
 <p><strong>1) First Way - Components:</strong></p>
 <ul>
@@ -670,44 +677,44 @@ pre.editor-colors .fold-marker:after {
 <li><p>You do this by clicking the <strong>add component</strong> button on the right of the screen.</p>
 </li>
 </ul>
-<p>You can <code>name the component</code> whatever you want (materials, data, protocol, IRB, etc.) and you can also give it a <code>category</code>.</p>
+<p>You can <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">name the component</code> whatever you want (materials, data, protocol, IRB, etc.) and you can also give it a <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">category</code>.</p>
 <p>Once the component is created, we can go into it and see that the inside of all components looks just like an empty project; they have their own file trees, wikis, contributor lists, and privacy settings.</p>
 <p><strong>2) Second Way: - Folders</strong></p>
 <p><strong>Folders</strong> are another organization option that function a bit differently.</p>
 <ul>
-<li><p>A folder is literally just a way to <code>group a set of files</code>, nothing more.</p>
+<li><p>A folder is literally just a way to <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">group a set of files</code>, nothing more.</p>
 </li>
 <li><p>Click on the OSF storage icon and you will notice a <strong>create folder</strong> button will appear.</p>
 </li>
-<li><p>A folder will appear which we can then <code>rename</code> to whatever we want.</p>
+<li><p>A folder will appear which we can then <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">rename</code> to whatever we want.</p>
 </li>
 </ul>
-<p><strong>Folders are just about organizing files together</strong>, while <strong>components</strong> are good for <code>setting up large sections</code> of a project.</p>
-<h2 id="folder-organization-using-the-tier-protocol-3-0-">Folder organization using the <strong>TIER Protocol 3.0</strong></h2>
+<p><strong>Folders are just about organizing files together</strong>, while <strong>components</strong> are good for <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">setting up large sections</code> of a project.</p>
+<h2 id="folder-organization-using-the-tier-protocol-3-0">Folder organization using the <strong>TIER Protocol 3.0</strong></h2>
 <p>One good example of folder organization is adding the <strong>TIER Protocol 3.0</strong> folder structure to the project.  </p>
-<p>The <code>TIER Protocol</code> (Teaching Integrity in Empirical Research) provides guidance to students conducting quantitative research to help ensure that their work is <code>transparent and reproducible</code>.</p>
+<p>The <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">TIER Protocol</code> (Teaching Integrity in Empirical Research) provides guidance to students conducting quantitative research to help ensure that their work is <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">transparent and reproducible</code>.</p>
 <p>The Specifications of the TIER Protocol give a complete description of the replication documentation that should be preserved with your study when you have finished the project.</p>
 <h4 id="this-documentation-includes-">This documentation includes:</h4>
 <ul>
-<li><p>The <code>data</code> used for the project.</p>
+<li><p>The <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">data</code> used for the project.</p>
 </li>
-<li><p><code>Command files</code>, containing code written for your software, that clean and prepare the data as necessary, and then execute the procedures that generate the results reported in your study.</p>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Command files</code>, containing code written for your software, that clean and prepare the data as necessary, and then execute the procedures that generate the results reported in your study.</p>
 </li>
-<li><p>Various forms of <code>supporting information</code> to help a user understand and make use of your documentation.</p>
+<li><p>Various forms of <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">supporting information</code> to help a user understand and make use of your documentation.</p>
 </li>
 </ul>
 <p>Link to TIER site:<br><a href="http://www.projecttier.org/tier-protocol/specifications/">http://www.projecttier.org/tier-protocol/specifications/</a></p>
-<h3 id="-tip-"><strong><em>Tip</em></strong></h3>
-<p>You can also <code>nest components</code> within components.</p>
+<h3 id="tip"><strong><em>Tip</em></strong></h3>
+<p>You can also <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">nest components</code> within components.</p>
 <p>This allows you to set up areas that have different privacy settings or contributor lists from other sections in the project, which can be important for having fine grained control over access to different parts of a project.</p>
-<h2 id="-activity-tier-protocol-v3-setup-"><strong><em>Activity - TIER Protocol v3 Setup</em></strong></h2>
+<h2 id="activity-tier-protocol-v3-setup"><strong><em>Activity - TIER Protocol v3 Setup</em></strong></h2>
 <p><strong>Create project structure using folders/components</strong></p>
-<p>Set up some <code>initial structure</code> for your project.</p>
+<p>Set up some <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">initial structure</code> for your project.</p>
 <p>Think through what are the major categories of file types you’ll have, and whether you might want to have different contributors or public vs. private access setting for them to determine whether you want to set them up as folders or components.</p>
 <ul>
-<li><p>For this example, Let's setup the <code>TIER Protocol 3.0 folder structure</code>.<br>Show TIER folder structure image. <a href="https://bucketeer-82911c16-8ccd-4854-b255-5b3ebba24d7c.s3.amazonaws.com/images/TIER-folder-illustration-v3.0.width-800.png?Signature=zPVPApp1W8s%2BLDjCb8W0cCOtfU0%3D&amp;Expires=1519196929&amp;AWSAccessKeyId=AKIAII43OBBLSEWFDW2A">TIER Structure Image</a></p>
+<li><p>For this example, Let's setup the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">TIER Protocol 3.0 folder structure</code>.<br>Show TIER folder structure image. <a href="https://bucketeer-82911c16-8ccd-4854-b255-5b3ebba24d7c.s3.amazonaws.com/images/TIER-folder-illustration-v3.0.width-800.png?Signature=zPVPApp1W8s%2BLDjCb8W0cCOtfU0%3D&amp;Expires=1519196929&amp;AWSAccessKeyId=AKIAII43OBBLSEWFDW2A">TIER Structure Image</a></p>
 </li>
-<li><p>Create the <code>Replication Documentation</code> structure in <code>OSF Storage</code>:<br>1.[Main Folder] Replication Documentation - folders<br>2.[subfolder] Analysis-Data<br>3.[subfolder] Command-Files<br>4.[subfolder] Documents<br>5.[subfolder] Original-Data<br>6.Subfolder in Original-data] Metadata   </p>
+<li><p>Create the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Replication Documentation</code> structure in <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">OSF Storage</code>:<br>1.[Main Folder] Replication Documentation - folders<br>2.[subfolder] Analysis-Data<br>3.[subfolder] Command-Files<br>4.[subfolder] Documents<br>5.[subfolder] Original-Data<br>6.Subfolder in Original-data] Metadata   </p>
 </li>
 <li><p>Note you can setup this structure in the components to have more control of your data sharing.</p>
 </li>
@@ -716,35 +723,35 @@ pre.editor-colors .fold-marker:after {
 <p>The last thing we’re going to do for this lesson is to add some background literature to the project.</p>
 <p>we’re going to take advantage of the OSFs add-on capabilities.</p>
 <ul>
-<li><p><code>Add-ons</code> allow you to connect third party services to the OSF so you can continue to use the tools that you like, but connect them so that you, your collaborators, and readers of your work, only have to go to one place to find all aspects of your project.</p>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Add-ons</code> allow you to connect third party services to the OSF so you can continue to use the tools that you like, but connect them so that you, your collaborators, and readers of your work, only have to go to one place to find all aspects of your project.</p>
 </li>
 <li><p>If you go to the <strong>settings</strong> page of your project you can see the different add-ons that are available.</p>
 </li>
 </ul>
-<h2 id="-activity-adding-storage-add-ons-"><strong><em>Activity - Adding Storage Add-ons</em></strong></h2>
+<h2 id="activity-adding-storage-add-ons"><strong><em>Activity - Adding Storage Add-ons</em></strong></h2>
 <ul>
 <li><strong>Using one of the storage add-ons.</strong></li>
 </ul>
-<p>I’m going to show the <code>Google Drive add-on</code>, but if you don’t have a Drive account you can use Box or anything on the list.</p>
+<p>I’m going to show the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Google Drive add-on</code>, but if you don’t have a Drive account you can use Box or anything on the list.</p>
 <ul>
 <li><p>find the files we shared for this lesson.</p>
 </li>
-<li><p>Log into into your chosen storage account and <code>create a folder</code> called <strong>2018 GPS project</strong> and then upload the files to that folder.</p>
+<li><p>Log into into your chosen storage account and <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">create a folder</code> called <strong>2018 FSCI OSF Demo</strong> and then upload the files to that folder.</p>
 </li>
 <li><p>Now, go to your <strong>OSF project and create a new component</strong> for the files just uploaded.</p>
 </li>
 </ul>
 <h3 id="tip">TIP</h3>
-<p>We don’t have to put the add-on in it’s own component, but this will allow us to <code>keep these PDFs private if we decide we want to make the rest of the project public</code>.</p>
+<p>We don’t have to put the add-on in it’s own component, but this will allow us to <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">keep these PDFs private if we decide we want to make the rest of the project public</code>.</p>
 <ul>
-<li>When you’re inside the new <strong>project component</strong>, go to the <strong>settings tab</strong> and check the <code>Google Drive add-on</code>, or whichever one you are going to use.</li>
+<li>When you’re inside the new <strong>project component</strong>, go to the <strong>settings tab</strong> and check the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Google Drive add-on</code>, or whichever one you are going to use.</li>
 </ul>
 <p>This will bring up some information on exactly how this add-on will function.</p>
 <ul>
 <li>Click <strong>confirm</strong>, and then click <strong>apply</strong> below the list of add-ons.</li>
 </ul>
 <p>You will then be asked to connect your account.</p>
-<p>You’ll be taken to Google Drive where you will have to <code>input your gdrive username and password</code>, and will then be asked to allow OSF access to your Google Drive.</p>
+<p>You’ll be taken to Google Drive where you will have to <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">input your gdrive username and password</code>, and will then be asked to allow OSF access to your Google Drive.</p>
 <ul>
 <li><p>Back at the OSF, you’ll now see a list of all your Google Drive folders in your project.</p>
 </li>
@@ -756,5 +763,5 @@ pre.editor-colors .fold-marker:after {
 <p>What this has done is create a two-way door between the OSF and Google Drive.</p>
 <p>Any changes we make to that Google Drive folder will show up in our project, and any changes we make to the materials from the OSF will show up in Google Drive.</p>
 <h3 id="warning-">Warning!</h3>
-<p>Files deleted in the OSF add-on will <code>DELETE</code> from the original storage location.  </p></body>
+<p>Files deleted in the OSF add-on will <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">DELETE</code> from the original storage location.  </p></body>
 </html>

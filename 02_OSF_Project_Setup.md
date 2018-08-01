@@ -1,4 +1,4 @@
-# OSF GPS Lecture
+# Open Science Framework Demo
 
 ##### Lesson adapted from:    
 Jolene Esposito OSF-Curriculum  
@@ -21,8 +21,8 @@ Learning objectives:
 * **Download Sample Data Files from [public OSF project]**
 * Unzip and copy the files to a folder called "OSF" on your desktop  
 * Take poll for Google Drive, if class uses Google Drive, save files in GDrive
-* In OSF, search OSF projects for **"2018 GPS Data Management Template"**
-* [Link to Project](https://osf.io/7z3jd/)
+* In OSF, search OSF projects for **"FSCI AM6 TIER Folder Example"**
+* [Link to Project](https://osf.io/a2ydp/)
 
 ## Creating a project to document and organize a project
 * We talked before about the problems that can arise when we either don’t document work, or we try and go and back document work once a study is accepted for publication.
@@ -225,7 +225,7 @@ I’m going to show the `Google Drive add-on`, but if you don’t have a Drive a
 
 * find the files we shared for this lesson.
 
-* Log into into your chosen storage account and `create a folder` called **2018 GPS project** and then upload the files to that folder.
+* Log into into your chosen storage account and `create a folder` called **2018 FSCI OSF Demo** and then upload the files to that folder.
 
 * Now, go to your **OSF project and create a new component** for the files just uploaded.
 
