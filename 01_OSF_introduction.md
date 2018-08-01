@@ -1,6 +1,6 @@
 # Open Science Framework Demo
 
-##### Lesson adapted from:
+##### Lesson adapted from:d
 Jolene Esposito OSF-Curriculum
 csoderberg OSF-Curriculum
 
