@@ -85,7 +85,7 @@ You always want to **keep a copy of our complete, raw data file.** Even if we en
 ## ***Activity - Uploading files and data***
 **Upload raw data file and data dictionary. Working with TIER demo files:**
 
-* Find the unzipped `TIER demo files` and upload it to the appropriate folder based on the TIER protocol structure created earlier in the OSF repository.
+* Find the unzipped `Replication Documentation for Midlife Crisis Paper not organized files` and upload the files to the folders you think are appropriate based on the TIER protocol structure created earlier in the OSF repository.
 
 
 
