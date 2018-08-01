@@ -124,7 +124,7 @@ Now that I’ve shown the ways version control works on the system, I want you t
 **update wiki to include navigational README for the project**
 The final thing we want to do is make sure that we give our future selves and, potentially, other people information about how to navigate our project.
 
-What are our files, where can we find things, if information is missing or private, why?
+**What are our files, where can we find things, if information is missing or private, why?**
 
  Basically, we want to create a **README** for the project.
 

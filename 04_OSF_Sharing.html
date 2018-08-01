@@ -83,7 +83,7 @@
 .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
 .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
 .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
 .markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
 .markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
 .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
@@ -105,8 +105,9 @@
   border-bottom: 1px dotted lime;
   position: absolute;
 }
-.line-number.bracket-matcher {
-  background-color: #777;
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
 }
 
 .spell-check-misspelling .region {
@@ -164,7 +165,7 @@ pre.editor-colors .gutter .line-number {
 }
 pre.editor-colors .gutter .line-number.cursor-line {
   color: #abb2bf;
-  background-color: #2c313a;
+  background-color: #3a3f4b;
 }
 pre.editor-colors .gutter .line-number.cursor-line-no-selection {
   background-color: transparent;
@@ -352,7 +353,6 @@ pre.editor-colors .fold-marker:after {
   color: #c678dd;
 }
 .syntax--meta.syntax--separator {
-  background-color: #373b41;
   color: #abb2bf;
 }
 .syntax--meta.syntax--tag {
@@ -432,6 +432,10 @@ pre.editor-colors .fold-marker:after {
 .syntax--source.syntax--elixir .syntax--variable.syntax--definition,
 .syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
   color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
 }
 .syntax--source.syntax--elixir .syntax--quoted {
   color: #98c379;
@@ -518,6 +522,9 @@ pre.editor-colors .fold-marker:after {
 .syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
   color: inherit;
 }
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
 .syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
   color: #c678dd;
 }
@@ -526,7 +533,7 @@ pre.editor-colors .fold-marker:after {
 }
 </style>
   </head>
-  <body class='markdown-preview' data-use-github-style><h1 id="osf-gps-lecture">OSF GPS Lecture</h1>
+  <body class='markdown-preview' data-use-github-style><h1 id="osf-demo-lecture">OSF Demo Lecture</h1>
 <h5 id="lesson-adapted-from-">Lesson adapted from:</h5>
 <p>Jolene Esposito OSF-Curriculum<br>csoderberg OSF-Curriculum</p>
 <h1 id="lesson-4-sharing-your-work">Lesson 4: Sharing Your work</h1>
@@ -556,15 +563,15 @@ pre.editor-colors .fold-marker:after {
 <h2 id="sharing">Sharing</h2>
 <p>When a project is created, everything on the OSF is <strong>private by default.</strong></p>
 <p>You can make either the entire project, or specific subproject or components of the project public at any point you want by clicking on the <strong>public</strong> button of each project/component you wish to make public.</p>
-<h2 id="-tip-"><strong><em>Tip</em></strong></h2>
-<p>One important thing to consider before making anything <code>public</code> is whether it contains anything that you can’t make public for legal or ethical reasons.</p>
+<h2 id="tip"><strong><em>Tip</em></strong></h2>
+<p>One important thing to consider before making anything <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">public</code> is whether it contains anything that you can’t make public for legal or ethical reasons.</p>
 <p>That might include materials that you used in your project that are perhaps copyrighted, or data-files that are not anonymous and so your IRB has told you that you can only make public the anonymous dataset.</p>
 <p>Make sure you have organized your project in such a way that it will allow you to make public only the parts you want, while keeping some parts private if that is necessary.</p>
-<h2 id="-discussion-"><strong><em>Discussion</em></strong></h2>
+<h2 id="discussion"><strong><em>Discussion</em></strong></h2>
 <p><strong>Question: What could I do so that I could share my clean data file but not reveal my raw data file with the geolocation variable in it?</strong></p>
 <p>One thing I could do would be to create another <strong>component</strong> under Data and move my raw data file to that component.</p>
 <p>Any file can be moved by simply clicking and dragging it to whichever part of the project you want to move it to.</p>
-<h2 id="-activity-make-your-project-public-"><strong><em>Activity - Make your project public</em></strong></h2>
+<h2 id="activity-make-your-project-public"><strong><em>Activity - Make your project public</em></strong></h2>
 <p>Now that we have uploaded and organized our files, let's make our project public.</p>
 <p><strong>discuss how much of your project you can/want to make public.</strong></p>
 <p><strong>Make those sections of your project public, and if you need to reorganize any parts of your project to accomplish that, please do that now.</strong></p>
@@ -577,7 +584,7 @@ pre.editor-colors .fold-marker:after {
 <p>Work posted on the OSF can be discovered in a few different ways.</p>
 <ul>
 <li>In the OSF:<ul>
-<li>The first is through the <code>search function</code> within the OSF itself. We can search for anything we want, a project title, a general topic, a person’s name, and the system will bring up anything related to our search.</li>
+<li>The first is through the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">search function</code> within the OSF itself. We can search for anything we want, a project title, a general topic, a person’s name, and the system will bring up anything related to our search.</li>
 </ul>
 </li>
 </ul>
@@ -585,7 +592,7 @@ pre.editor-colors .fold-marker:after {
 <ul>
 <li><p>Using Google:   </p>
 <ul>
-<li>Public project on the OSF are also <code>indexed by google</code>, so they can be discovered outside the system. So, for example, if we go to google and search for <code>‘Daniel Lakens effect size’</code> his OSF project related to effect sizes comes up.</li>
+<li>Public project on the OSF are also <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">indexed by google</code>, so they can be discovered outside the system. So, for example, if we go to google and search for <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">‘Daniel Lakens effect size’</code> his OSF project related to effect sizes comes up.</li>
 </ul>
 </li>
 <li><p>Share:    </p>
@@ -594,7 +601,7 @@ pre.editor-colors .fold-marker:after {
 </ul>
 </li>
 </ul>
-<p>For SHARE specifically, <code>only public registrations show up in the search results</code>, which is another reason to register projects when you want to release a stable version of them.</p>
+<p>For SHARE specifically, <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">only public registrations show up in the search results</code>, which is another reason to register projects when you want to release a stable version of them.</p>
 <ul>
 <li><p>Part of making our work discoverable is making sure the right people find it through searches.</p>
 </li>
@@ -605,13 +612,13 @@ pre.editor-colors .fold-marker:after {
 <li><p>But it won’t search through individual files.  </p>
 </li>
 </ul>
-<h3 id="-discussion-"><strong><em>Discussion</em></strong></h3>
+<h3 id="discussion"><strong><em>Discussion</em></strong></h3>
 <p>If you think there are a few important key words that people might use to search for your project that don’t appear in the wiki or project name, where do you put this information?    </p>
 <p><strong>We can add tags</strong> to our project to make it more discoverable.</p>
 <ul>
 <li>You’ll notice this <strong>tags</strong> area to the right of the screen. I can put whatever descriptors or keywords in here that I want to make it easier to discover my project for searching for related words/topics.</li>
 </ul>
-<h2 id="-activity-"><strong><em>Activity</em></strong></h2>
+<h2 id="activity"><strong><em>Activity</em></strong></h2>
 <p><strong>Add some tags that you think might be relevant to your project.</strong></p>
 <h2 id="getting-credit">Getting Credit</h2>
 <p>A big part of academia and the job market is being able to show that your work has impact.</p>
@@ -621,10 +628,10 @@ pre.editor-colors .fold-marker:after {
 <p><strong>Every project and component on the OSF also has an automatically generated citation which uses the GUID of the page, so as long as you have the correct contributor list on your project, everyone can get credit for it.</strong></p>
 <p>Since citation counts have limitations, what else could we use to measure the impact of our work?</p>
 <p>Two things we might be interested in are <strong>views and downloads.</strong> For all public projects we track how many people are visiting a page, and we track how often all files are downloaded.</p>
-<h4 id="-daniel-lakens-example-"><strong><em>Daniel Lakens Example:</em></strong></h4>
+<h4 id="daniel-lakens-example-"><strong><em>Daniel Lakens Example:</em></strong></h4>
 <p>Now, your projects aren’t particularly old, so they probably won’t have very many views. But, if we search for <strong>Daniel Lakens</strong> and click on this project, we can see how views and downloads can give vastly different information than citation counts.</p>
 <ul>
-<li><p>This is an <code>OSF project associated with an article published in Frontiers</code>, which is an open access journal. The paper and supplemental materials were also made publicly available on the OSF.  <a href="https://osf.io/ixgcd/">OSF link here</a></p>
+<li><p>This is an <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">OSF project associated with an article published in Frontiers</code>, which is an open access journal. The paper and supplemental materials were also made publicly available on the OSF.  <a href="https://osf.io/ixgcd/">OSF link here</a></p>
 </li>
 <li><p>This paper has had a bit under 100 citations, which isn’t bad, but it’s not a huge amount of impact.</p>
 <ul>

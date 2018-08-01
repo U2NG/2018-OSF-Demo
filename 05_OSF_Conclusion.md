@@ -1,4 +1,4 @@
-# OSF GPS Lecture
+# OSF Demo Lecture
 
 ##### Lesson adapted from csoderberg OSF-Curriculum https://github.com/csoderberg/OSF-Curriculum
 
