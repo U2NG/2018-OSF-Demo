@@ -3,7 +3,7 @@ OSF Demo materials and lesson
 
 0. Setup  
   [Data zip files](https://github.com/ucsdlib/GPS-OSF-Lecture/tree/master/data)    
-  [OSF Template Data Files (zip)](https://osf.io/qbzp5/)
+  [OSF Template Data Files (zip)](https://osf.io/a2ydp/)
 
 
 1. [Introduction](https://u2ng.github.io/2018-OSF-Demo/01_OSF_introduction.html)
